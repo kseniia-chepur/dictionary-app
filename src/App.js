@@ -10,6 +10,16 @@ export default function App() {
         </header>
         <Dictionary />
       </div>
+      <footer className="text-center">
+        <a
+          href="https://github.com/kseniia-chepur/dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>
+        <span> by Kseniia Chepur</span>
+      </footer>
     </div>
   );
 }
