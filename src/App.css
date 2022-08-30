@@ -1,19 +1,30 @@
 .App {
-  color: #3E2B33;
-  max-width: 1000px;
+  color: #3e2b33;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .App header {
+  min-height: 200px;
+  position: relative;
+}
+
+.App header::after {
+  content: "";
   background: url("./images/photo-collage.jpg");
   background-size: cover;
-  border-radius: 2px;
-  min-height: 200px;
+  border-radius: 4px;
   opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .App header h1 {
-  font-size: 60px;
+  font-size: 72px;
   padding-top: 80px;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -31,6 +42,5 @@
 .App footer a {
   text-decoration: none;
   font-weight: bold;
-  color:#24697D;
-
+  color: #24697d;
 }
