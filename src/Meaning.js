@@ -15,6 +15,13 @@ export default function Meaning(props) {
           </div>
         );
       })}
+      {props.data.synonyms.map(function (synonym, index) {
+        return (
+          <ul key={index}>
+            <li>{synonym}</li>
+          </ul>
+        );
+      })}
     </div>
   );
 }
