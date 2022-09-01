@@ -4,7 +4,7 @@ import SearchResults from "./SearchResults";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
-  const [searchResults, setSearchResults] = useState (null);
+  const [searchResults, setSearchResults] = useState(null);
   function saveInput(event) {
     setKeyword(event.target.value);
   }
@@ -21,7 +21,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form className="form-group mt-5 mb-3" onSubmit={handleSubmit}>
+      <form className="form-group my-5" onSubmit={handleSubmit}>
         <input
           type="search"
           className="form-control"
@@ -29,8 +29,8 @@ export default function Dictionary() {
           onChange={saveInput}
         />
       </form>
-      <SearchResults data={searchResults}/>
 
+      <SearchResults data={searchResults} />
     </div>
   );
 }

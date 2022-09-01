@@ -1,0 +1,20 @@
+.Meaning h3 {
+  font-size: 24px;
+  padding: 5px 0;
+}
+
+.Meaning ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.Meaning ul li {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.Meaning small {
+  font-weight: bold;
+  font-style: italic;
+}

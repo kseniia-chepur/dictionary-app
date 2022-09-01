@@ -1,8 +1,9 @@
 import React from "react";
+import "./Meaning.css"
 
 export default function Meaning(props) {
   return (
-    <div className="Meaning">
+    <section className="Meaning">
       <h3>{props.data.partOfSpeech}</h3>
       {props.data.definitions.map(function (definition, index) {
         return (
@@ -10,7 +11,7 @@ export default function Meaning(props) {
             <p>
               {definition.definition}
               <br />
-              <em>{definition.example}</em>
+              <small className="text-muted">{definition.example}</small>
             </p>
           </div>
         );
@@ -22,6 +23,6 @@ export default function Meaning(props) {
           </ul>
         );
       })}
-    </div>
+    </section>
   );
 }

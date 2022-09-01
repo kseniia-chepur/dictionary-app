@@ -1,0 +1,13 @@
+.Phonetics h2 {
+  font-size: 28px;
+  padding: 10px;
+}
+
+.Phonetics span {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.6;
+  position: relative;
+  top: -20px;
+  margin-left: 20px;
+}
