@@ -13,9 +13,10 @@ export default function Phonetics(props) {
     );
   } else
     return (
-      <div>
+      <div className="Phonetics">
         <h2>{props.word}</h2>
-        <p>{props.phonetic}</p>
+        <br/>
+        <span className="ms-2">{props.phonetic}</span>
       </div>
     );
 }

@@ -1,7 +1,14 @@
+:root {
+  --primary-color: #23272f;
+  --accent-color: #24697d;
+}
+
 .App {
   color: #23272f;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
 }
 
 .App header {
@@ -24,7 +31,7 @@
 }
 
 .App header h1 {
-  font-size: 72px;
+  font-size: 62px;
   padding-top: 80px;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -42,7 +49,7 @@
 .App footer a {
   text-decoration: none;
   font-weight: bold;
-  color: #24697d;
+  color: var(--accent-color);
 }
 
 .App section {

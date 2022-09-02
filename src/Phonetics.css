@@ -1,5 +1,6 @@
 .Phonetics h2 {
-  font-size: 28px;
+  color: var(--accent-color);
+  font-size: 30px;
   padding: 10px;
 }
 
