@@ -1,14 +1,13 @@
 :root {
-  --primary-color: #23272f;
   --accent-color: #24697d;
 }
 
 .App {
   color: #23272f;
-  max-width: 1000px;
-  margin: 0 auto;
   font-family: "Josefin Sans", sans-serif;
   font-size: 17px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .App header {
@@ -57,4 +56,14 @@
   border-radius: 8px;
   padding: 10px 20px;
   margin: 30px 0;
+}
+
+@media (max-width: 576px) {
+  .App header::after {
+    background: url("./images/vintage.jpg");
+    background-size: cover;
+  }
+  /* .App header h1 {
+    font-size: 52px;
+  } */
 }

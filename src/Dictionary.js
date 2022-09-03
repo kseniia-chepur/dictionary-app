@@ -8,11 +8,7 @@ export default function Dictionary() {
   const [searchResults, setSearchResults] = useState(null);
   const [photos, setPhotos] = useState(null);
 
-  function saveInput(event) {
-    setKeyword(event.target.value);
-  }
-
-  function getDictionaryResponse(response) {
+   function getDictionaryResponse(response) {
     setSearchResults(response.data[0]);
   }
 
@@ -44,7 +40,9 @@ export default function Dictionary() {
           type="search"
           className="form-control"
           placeholder="Search for any word or phrase"
-          onChange={saveInput}
+          onChange={(e) =>
+            setKeyword(e.target.value)
+          }
         />
       </form>
       <SearchResults data={searchResults} />
