@@ -11,15 +11,7 @@ export default function SearchResults(props) {
             word={props.data.word}
             audio={props.data.phonetics[0].audio}
             phonetic={props.data.phonetic}
-          />
-          {/* <h2>{props.data.word}</h2>
-          {props.data.phonetics.map(function (phonetics, index) {
-            return (
-              <div key={index}>
-                <Phonetics data={phonetics} />
-              </div> */}
-          {/* );
-          })} */}
+          />         
         </section>
         {props.data.meanings.map(function (meaning, index) {
           return (

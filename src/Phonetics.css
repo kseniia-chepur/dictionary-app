@@ -12,3 +12,12 @@
   top: -20px;
   margin-left: 20px;
 }
+
+@media (max-width: 576px) {
+  .Phonetics span {
+    top: 0;
+    display: block;
+    position: static;
+    margin: 10px;
+  }
+}
