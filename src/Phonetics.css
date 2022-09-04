@@ -5,12 +5,12 @@
 }
 
 .Phonetics span {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   opacity: 0.6;
   position: relative;
   top: -20px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 @media (max-width: 576px) {
