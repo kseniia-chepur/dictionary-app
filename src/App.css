@@ -5,7 +5,8 @@
 .App {
   color: #23272f;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 24px;
   max-width: 1000px;
   margin: 0 auto;
 }
