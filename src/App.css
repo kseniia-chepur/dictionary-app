@@ -42,9 +42,13 @@
 }
 
 .App footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
   font-size: 14px;
   font-style: italic;
-  margin: 250px 0 20px;
+  margin: 0 auto;
 }
 
 .App footer a {

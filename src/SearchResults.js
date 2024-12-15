@@ -9,9 +9,9 @@ export default function SearchResults(props) {
         <section>
           <Phonetics
             word={props.data.word}
-            audio={props.data.phonetics[0].audio}
+            audio={props.data.phonetics[0]?.audio}
             phonetic={props.data.phonetic}
-          />         
+          /> 
         </section>
         {props.data.meanings.map(function (meaning, index) {
           return (
