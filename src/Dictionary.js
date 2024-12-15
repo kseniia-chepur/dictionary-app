@@ -58,13 +58,13 @@ export default function Dictionary() {
         />
       </form>
 
-      {!notFoundMsg && !isLoading ? (
+      {notFoundMsg && !isLoading ? (
+        <p className='text-center'>No Results Found</p>
+      ) : (
         <>
           <SearchResults data={searchResults} />
           <Photos photos={photos} />
         </>
-      ) : (
-        <p className='text-center'>No Results Found</p>
       )}
     </div>
   );

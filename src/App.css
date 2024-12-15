@@ -9,6 +9,10 @@
   line-height: 24px;
   max-width: 1000px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .App header {
@@ -42,10 +46,6 @@
 }
 
 .App footer {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
   font-size: 14px;
   font-style: italic;
   margin: 0 auto;
@@ -68,8 +68,5 @@
   .App header::after {
     background: url("./images/vintage.jpg");
     background-size: cover;
-  }
-  .App footer {
-    margin-top: 150px;
   }
 }
