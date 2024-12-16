@@ -22,8 +22,7 @@ export default function Dictionary() {
 
     const dictionaryRequest = axios.get(dictionaryUrl);
 
-    const pexelsApiKey =
-      '563492ad6f91700001000001223061c877d44961b96bbe66a00da528';
+    const pexelsApiKey = process.env.REACT_APP_PEXELS_API_KEY;
     const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 
     const pexelsRequest = axios.get(pexelsUrl, {
@@ -44,6 +43,7 @@ export default function Dictionary() {
           setNotFoundMsg(true);
         }
       })
+      .catch((error) => console.error(error))
       .finally(() => setIsLoading(false));
   }
 
